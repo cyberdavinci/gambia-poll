@@ -1,0 +1,53 @@
+{
+  "name": "Gambia Votes 2026",
+  "short_name": "Gambia Votes",
+  "description": "Anonymous presidential poll for The Gambia. Cast your vote and see live results.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a7a4a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/gambialogo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/gambialogo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["politics", "government", "social"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/gambialogo.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Gambia Votes Home Screen"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Cast Vote",
+      "short_name": "Vote",
+      "description": "Quickly cast your vote",
+      "url": "/",
+      "icons": [{ "src": "/gambialogo.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "View Results",
+      "short_name": "Results",
+      "description": "See current poll results",
+      "url": "/",
+      "icons": [{ "src": "/gambialogo.jpg", "sizes": "192x192" }]
+    }
+  ]
+}
