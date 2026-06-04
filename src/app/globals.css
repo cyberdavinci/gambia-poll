@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+
+  --green-dark:   #0a4a2e;
+  --green-mid:    #1a7a4a;
+  --green-light:  #2db370;
+  --green-pale:   #d4f0e2;
+  --red-dark:     #7a1a1a;
+  --red-mid:      #c0392b;
+  --red-accent:   #e74c3c;
+  --gold:         #c9a84c;
+  --gold-pale:    #fdf4df;
+  --ink:          #0f1a12;
+  --ink-muted:    #3d5244;
+  --ink-faint:    #8aaa93;
+  --surface:      #f8faf8;
+  --surface-card: #ffffff;
+  --border:       rgba(26, 122, 74, 0.15);
+  --border-mid:   rgba(26, 122, 74, 0.3);
+}
+
+html, body {
+  min-height: 100vh;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Decorative background pattern */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(45, 179, 112, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 85% 80%, rgba(201, 168, 76, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(192, 57, 43, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
